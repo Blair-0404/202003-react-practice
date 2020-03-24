@@ -11,14 +11,12 @@ class MyPractice2 extends Component {
 
   handleChange = (e) => {
     const {name, value} = e.target; // e.target의 name은 username or password일것이기 때문에
-    const {correctPw} = this.state; // Q. ???비구조화 할달이 이자리에 선언되야 할지 ??? ??
 
     this.setState({
       [name]: value,
     });
 
     if([name][0] === "password") {
-      const {correctPw} = this.state; // Q. ???비구조화 할달이 이자리에 선언되야 할지 ??? 그런데 두 줄 다 왜 correctPw state값이 사용이 안되고있는지 모르겠다.
       if([value][0].length >= 6) {
         console.log("6자리이-통과");
         this.setState({
