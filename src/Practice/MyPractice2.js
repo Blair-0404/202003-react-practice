@@ -11,7 +11,7 @@ class MyPractice2 extends Component {
 
   handleChange = (e) => {
     const {name, value} = e.target; // e.target의 name은 username or password일것이기 때문에
-    const {correctPw} = this.state; // Q. ???비구조화 할달이 이자리에 선언되야 할지 ???
+    const {correctPw} = this.state; // Q. ???비구조화 할달이 이자리에 선언되야 할지 ??? ??
 
     this.setState({
       [name]: value,

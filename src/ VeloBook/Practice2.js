@@ -1,5 +1,5 @@
 import React, { Component }from "react";
-import SamplePractice from "../Tutoring/SamplePractice"
+import SamplePractice from "../Practice/SamplePractice"
 import PropTypes from "prop-types";
 
 

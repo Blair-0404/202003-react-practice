@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import SamplePractice from './Tutoring/SamplePractice';
+import SamplePractice from './Practice/SamplePractice';
 
 test('renders learn react link', () => {
   const { getByText } = render(<SamplePractice />);

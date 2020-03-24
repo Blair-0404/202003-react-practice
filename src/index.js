@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import SamplePractice from "./Tutoring/SamplePractice";
-import MyPractice2 from "./Tutoring/MyPractice2";
+import SamplePractice from "./Practice/SamplePractice";
+import MyPractice2 from "./Practice/MyPractice2";
 
 
 
