@@ -23,16 +23,18 @@ class MyPractice2 extends Component {
   };
 
   isSafe = (e) => {
-    const {name, value} = e.target;
+    const {email, username, password} = this.state;
+    const checkLow = new RegExp("(?=.*[a-z[])");
+    const checkUpper = new RegExp("(?=.*[A-Z[])");
+    console.log(checkLow.test(password));
+    console.log(checkUpper.test(password));
 
-    if ([name][0] === "password") {
-      if ([value][0].length >= 6) {
-        console.log("통과");
-        this.correctPw = true;
-      } else if ([value][0].length < 6) {
-        console.log("불통과-6자리 이상 입력해주세요");
-        this.correctPw = false;
-      }
+    if ((password.length >= 6) && (!password.includes(username)) && (checkLow.test(password)) && (checkUpper.test(password))) {
+      console.log("통과");
+      this.correctPw = true;
+    } else {
+      console.log("불통과");
+      this.correctPw = false;
     }
   };
 
